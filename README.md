@@ -1,3 +1,3 @@
 # ca_shellscripts
 
-Mon TAF !
+Mes efforts, ma sueur, mes scripts...
