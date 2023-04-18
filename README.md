@@ -1,3 +1,4 @@
 # ca_shellscripts
 
-Mes efforts, ma sueur, mes scripts...
+Mes efforts, ma sueur, mes scripts !
+
