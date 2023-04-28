@@ -15,17 +15,17 @@
 
 import sys
 
-argument = sys.argv[1]
+user_arg = sys.argv[1]
 
-if argument.isdigit():
-    test = (int(sys.argv[1]) % 2)
-    if test == 0:
+if user_arg.isdigit() or (user_arg[0] == "-" and user_arg[1:].isdigit()):
+    test = int(user_arg)
+    if test % 2 == 0:
         print("pair")
     else:
         print("impair")
 else:
     print("Tu ne me la mettras pas à l’envers !")
-    
+
 
 
 
