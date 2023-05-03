@@ -9,15 +9,26 @@
 
 #========================================== INVERSER UNE CHAINE ==========================================
 
-import sys
+from sys import argv
 
-string = sys.argv[1:]
+string = argv[1:]
 
-if string == [] or sys.argv[1].isdigit():
-    print("Vous devez saisir une chaine de caracteres")
+if string == [] or argv[1].isdigit():
+    print("Vous devez saisir une chaine de caracteres. \nUn mot par exemple.")
 else:
     for i in string:
         print(i[::-1])
+     
+
+
+
+#if sys.argv[1].isdigit() or (string[0] == "-" and string[1:].isdigit()):
+#    print("erreur")
+#   
+#        
+#else:
+#    for i in string:
+#        print(i[::-1])
 
 
 

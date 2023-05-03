@@ -1,12 +1,11 @@
 #ecrire un programme qui affiche le nom du fichier contenant ce programme 
 # resultat attendu : 01.py
 
-#======================================== NOM DU PROGRAMME ========================================= 01.py
-print("1:", __file__)
+#======================================== NOM DU PROGRAMME ========================================= 01.p
 
-import sys
+from sys import argv
 
-print("2:", sys.argv[0])
+print(argv[0])
 
 
 

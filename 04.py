@@ -13,9 +13,9 @@
 
 #===================================== PAIR OU IMPAIR =========================================
 
-import sys
+from sys import argv
 
-user_arg = sys.argv[1]
+user_arg = argv[1]
 
 if user_arg.isdigit() or (user_arg[0] == "-" and user_arg[1:].isdigit()):
     test = int(user_arg)

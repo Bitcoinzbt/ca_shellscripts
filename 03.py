@@ -6,17 +6,17 @@
 #Attention : votre programme devra utiliser une boucle.
 
 
-import sys
+from sys import argv
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 counter = 0
 
 for letter in alphabet:
     counter += 1
-    if letter == sys.argv[1]:
+    if letter == argv[1]:
         index = (counter-1)
         suite = alphabet[index:]
-        print(f"Voici l'alphabet incluant la lettre {letter} que vous avez choisi : {suite}", end = "")
+        print(f"Voici l'alphabet a partir de la lettre {letter} que vous avez choisi : \n{suite} ;-)", end = "")
 print("\n")
 
 

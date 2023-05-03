@@ -4,10 +4,10 @@
 #=============================== AFFICHEUR D'ARGUMENTS =====================================
 
 
-import sys
+from sys import argv
 
-for each_arg in sys.argv[1:]:
-    print(f" {each_arg}")
+for each_arg in argv[1:]:
+    print(each_arg)
 
 
 

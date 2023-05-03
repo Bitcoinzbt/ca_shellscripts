@@ -10,10 +10,19 @@
 
 #====================================== DIVISIONS =========================================
 
-import sys
+from sys import argv
 
-a = int(sys.argv[1])
-b = int(sys.argv[2])
+liste = []
+for arg in argv[1:]:
+    if arg.isdigit():
+        liste.append(int(arg))
+    else:
+        print("Faut pas pousser !!")
+        exit()
+
+
+a = int(argv[1])
+b = int(argv[2])
 
 if a == 0 or b == 0:
     print("erreur !!")
